@@ -26,6 +26,10 @@ Read the [installation guide](Installation-Guide.html) before configuring a new 
 
 Default install directory: `%LOCALAPPDATA%\Programs\RobloxSpace`.
 
+## Interface language
+
+Use the top-right language selector to choose Chinese or English. The interface changes immediately without restarting the workspace, and the app remembers the selection for this Windows user. First Setup and the installer also provide a language selector. App controls, status messages, notification settings, update dialogs, and app-generated alerts follow the selected language. Roblox, Windows, and third-party components use their own language settings.
+
 ## Current behavior
 
 - F6 starts or stops clicking once per second, after confirming a position in the screenshot picker.
