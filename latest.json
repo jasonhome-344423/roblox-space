@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "product": "RobloxSpace",
+  "build": "1385d18a94537b6de6da6cc754fe5dd331c485ef33d0f213d078458546e69a37",
+  "installerSha256": "d28155315cd8219b1bea7c2d2669ee7ad3ecf81e81e6456336e18a165155e223",
+  "installerSize": 38787072,
+  "installerUrl": "https://github.com/jasonhome-344423/roblox-space/releases/download/stable/RobloxSpace-Setup.exe",
+  "installerFile": "RobloxSpace-Setup.exe",
+  "notes": "Chinese and English interface selection, remembered language preference, bilingual setup and installer, translated status and alert settings, and installation path validation. Product version metadata is unchanged."
+}
