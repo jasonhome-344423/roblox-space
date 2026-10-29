@@ -1,5 +1,7 @@
 # Roblox Space
 
+**Made entirely by ChatGPT.** The application's interface, code, and original app icon were created by ChatGPT. Roblox, Duo, and Moonlight are independent third-party components.
+
 Private preparation repository for the Roblox Space Windows installer, installation guide, and software update files.
 
 **Work is still in progress. This repository is private, and the installer is being prepared as an unpublished release draft.**
