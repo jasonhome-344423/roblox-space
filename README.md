@@ -40,9 +40,17 @@ Use the top-right language selector to choose Chinese or English. The interface 
 - Switching to battery power completely exits the application and workspace. Reconnecting external power does not restart them.
 - Telegram and Healthchecks notifications are configured separately from software update reminders.
 
+## Notification status
+
+Telegram verification runs every minute on a background timer, independently of the main window. Cloud heartbeats run every 30 seconds. A stale local result is shown as **Rechecking connection**, rather than claiming that the bot token has expired. Actual verification and delivery failures remain visible and are retried. A normal exit pauses the cloud check; launching the app restores heartbeats.
+
+The matching **1.0.0 Beta** channel uses the same code, bilingual interface, original app icon and ChatGPT credit. Both channels share the configured workspace and settings; a shared application lock permits only one channel to run at a time.
+
+**Draft asset status:** The latest 1.0.0 installer is prepared locally. Existing release-draft binary attachments may still contain the previous build until they are replaced and their checksums verified. This repository remains private and unpublished.
+
 ## Software updates
 
-The application supports manual checks, automatic checks and reminders, verified downloads, and local installer imports. Product version metadata has not been changed.
+The application supports manual checks, automatic checks and reminders, verified downloads, and local installer imports. The current product version is **1.0.0**. Version numbers follow **major.minor.patch**: major updates change the first number, smaller feature updates the second, and bug fixes or patches the third. Beta uses the same base version and a Beta label.
 
 **The private draft is not an anonymous update source. Do not enter a private release URL into the application or put a GitHub access token in an update URL.** A public, directly readable HTTPS update manifest will be configured only when publication is approved.
 
