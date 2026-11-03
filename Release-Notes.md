@@ -10,9 +10,9 @@
 - Chinese and English interfaces, immediate language switching, and a complete offline installation guide.
 - Screenshot position confirmation and F6 control for clicking once per second inside the configured workspace.
 - Roblox disconnect monitoring, reconnect controls, Telegram phone messages, and Healthchecks network-outage alerts.
-- Background notification verification, timeout retries, software update checks, reminders, and verified local or downloaded installers.
+- Background phone-notification verification and timeout retries.
 - More reliable viewer startup handling and additional diagnostic-log fallback paths.
-- Recoverable saving of update, language, and phone-alert preferences in encrypted user folders.
+- Recoverable saving of language and phone-alert preferences in encrypted user folders.
 
 ## Startup and exit behavior
 
@@ -32,10 +32,10 @@ The first start after a Windows restart or complete Duo shutdown requires the de
 
 Windows 11 x64, 24H2 or later is required. Duo and Roblox need the separate setup described in the guide. Portable Moonlight is included. The configured workspace uses **1280 × 720 at 30 Hz**.
 
-## Updates and integrity
+## Installation and integrity
 
-The application and release titles do not use visible product version numbers. Updates identify installation content using a build fingerprint. New installations use the official [update feed](https://raw.githubusercontent.com/jasonhome-344423/roblox-space/main/latest.json).
+The in-application software updater has been removed, including update checks, reminders, installer downloads, and local-installer import. If you choose to install the application again, download the EXE from this release and run it manually after closing Roblox Space.
 
-Keep **RobloxSpace-Setup.exe.update.json** beside the EXE when importing a local update. **SHA256SUMS.txt** lists release-file hashes. The complete project-source backup remains local; this release excludes personal settings and credentials.
+**SHA256SUMS.txt** lists release-file hashes. The complete project-source backup remains local; this release excludes personal settings and credentials.
 
 **Made entirely by ChatGPT:** the application's interface, code, and original icon. Roblox, Duo, and Moonlight are independent third-party components with their own authorship and licenses.

@@ -10,7 +10,6 @@ A Windows application that brings a configured Roblox workspace, click controls,
 
 - [Latest release and all download files](https://github.com/jasonhome-344423/roblox-space/releases/latest)
 - [Installation guide — Chinese / English](https://github.com/jasonhome-344423/roblox-space/releases/latest/download/Installation-Guide.html)
-- [Matching installer update manifest](https://github.com/jasonhome-344423/roblox-space/releases/latest/download/RobloxSpace-Setup.exe.update.json)
 - [Release-file SHA256 checksums](https://github.com/jasonhome-344423/roblox-space/releases/latest/download/SHA256SUMS.txt)
 
 **For installation, download `RobloxSpace-Setup.exe` from the release assets and run it.** The HTML guide has Chinese / English buttons and works offline after download. GitHub's automatic source archives contain this distribution repository's files, not the complete local project-source backup.
@@ -51,24 +50,17 @@ Telegram handles direct phone messages. Healthchecks monitors missing computer h
 
 A Telegram timeout is displayed as retrying, not as an expired bot token. Verification retries run in the background. Keep the application open for monitoring and use mobile data on the phone when testing a complete computer network outage.
 
-## Software updates
+## Manual installation
 
-The application and release titles do not use visible product version numbers. Updates compare installation-content fingerprints and verify the matching installer.
+The in-application software updater has been removed. Roblox Space does not check for software updates, display update reminders, download installers, or import installers through the application.
 
-Official update feed:
-
-```text
-https://raw.githubusercontent.com/jasonhome-344423/roblox-space/main/latest.json
-```
-
-New installations configure this feed automatically. Existing installations can save it in **Software Updates**, enable automatic reminders, and choose **Check Updates**. Updates install only after confirmation and application cleanup. For local import, keep the EXE and its matching `.update.json` together. Running the EXE directly does not require the JSON.
-
+If you choose to reinstall or obtain another installer, download **RobloxSpace-Setup.exe** from the [release page](https://github.com/jasonhome-344423/roblox-space/releases/latest) in your browser. Close Roblox Space, run the EXE yourself, and retain the existing installation directory to keep your pairing and phone-alert settings.
 ## Requirements and scope
 
 Windows 11 x64, 24H2 or later. The installer includes portable Moonlight. Duo and Roblox require the separate setup in the guide. This configuration uses **1280 × 720 at 30 Hz** with the free Duo configuration; it does not promise 60 or 120 Hz.
 
 The internal account `RobloxSpaceBeta` and Duo instance `RobloxBeta` are retained for compatibility with the existing workspace. Do not delete them as unused test files.
 
-This repository distributes the installer, documentation, and update manifests. The complete project-source backup remains local. Personal passwords, bot tokens, API keys, logs, pairing profiles, and certificates are excluded.
+This repository distributes the installer, documentation, and release-file checksums. The complete project-source backup remains local. Personal passwords, bot tokens, API keys, logs, pairing profiles, and certificates are excluded.
 
 This project is independent of Roblox Corporation. Third-party components retain their respective licenses.
