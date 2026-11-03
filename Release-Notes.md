@@ -12,6 +12,7 @@
 - Roblox disconnect monitoring, reconnect controls, Telegram phone messages, and Healthchecks network-outage alerts.
 - Background notification verification, timeout retries, software update checks, reminders, and verified local or downloaded installers.
 - More reliable viewer startup handling and additional diagnostic-log fallback paths.
+- Recoverable saving of update, language, and phone-alert preferences in encrypted user folders.
 
 ## Startup and exit behavior
 
