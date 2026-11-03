@@ -1,11 +1,10 @@
 {
     "schema":  1,
     "product":  "RobloxSpace",
-    "version":  "1.0.0",
-    "build":  "e835b3cf05e297e298e3125e564bee21885dae6051098497af230da6613f1e30",
-    "installerSha256":  "4947f2bc8d14f6dea2306bb31e1270b4ec217f95499677b44e6d30880f7d89f5",
-    "installerSize":  39096320,
-    "installerUrl":  "https://github.com/jasonhome-344423/roblox-space/releases/download/v1.0.0/RobloxSpace-Setup.exe",
+    "build":  "cfcc8b73198d3668aa02d974e853491e445e5dc36acacc67c8f4870ab2aac828",
+    "installerSha256":  "26a440c3da4b44378bd6e3b6b074f45a15bb6563bbe349d5c92b4c85ec7b6c31",
+    "installerSize":  39109120,
+    "installerUrl":  "https://github.com/jasonhome-344423/roblox-space/releases/download/current/RobloxSpace-Setup.exe",
     "installerFile":  "RobloxSpace-Setup.exe",
-    "notes":  "Roblox Space 1.0.0: notification background verification, synchronized stable/Beta UI, installer and source backup."
+    "notes":  "Roblox Space: faster workspace reuse and exit, reliable viewer startup, background notification verification, bilingual guides and installer."
 }
