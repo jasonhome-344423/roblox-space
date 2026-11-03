@@ -1,5 +1,7 @@
 # Roblox Space
 
+English | [Chinese / 华语](README.zh-Hans.md)
+
 A Windows application that brings a configured Roblox workspace, click controls, disconnect monitoring, and phone alerts into one window.
 
 **Made entirely by ChatGPT:** the application's interface, code, and original icon. Roblox, Duo, and Moonlight are independent third-party components with their own authorship and licenses.
@@ -64,3 +66,8 @@ The internal account `RobloxSpaceBeta` and Duo instance `RobloxBeta` are retaine
 This repository distributes the installer, documentation, and release-file checksums. The complete project-source backup remains local. Personal passwords, bot tokens, API keys, logs, pairing profiles, and certificates are excluded.
 
 This project is independent of Roblox Corporation. Third-party components retain their respective licenses.
+## Language coverage
+
+The main and monitor windows, click and position controls, notification settings, messages sent by this application, errors, dialog buttons, First Setup, installer, folder picker, and uninstaller support Chinese and English. Recovery commands include both languages and provide English and Chinese filenames. The offline guides contain matching detailed installation, notification, recovery, and troubleshooting steps.
+
+Third-party Windows prompts, games, Duo, Moonlight, Telegram, and Healthchecks pages and automatic messages use their own language settings. Technical identifiers, user input, and original system diagnostics retain their original text.

@@ -1,5 +1,7 @@
 # Roblox Space
 
+English | [Chinese / 华语](Release-Notes.zh-Hans.md)
+
 **[Download the Windows installer](https://github.com/jasonhome-344423/roblox-space/releases/latest/download/RobloxSpace-Setup.exe)**
 
 [Download the installation guide — Chinese / English](https://github.com/jasonhome-344423/roblox-space/releases/latest/download/Installation-Guide.html)
@@ -39,3 +41,9 @@ The in-application software updater has been removed, including update checks, r
 **SHA256SUMS.txt** lists release-file hashes. The complete project-source backup remains local; this release excludes personal settings and credentials.
 
 **Made entirely by ChatGPT:** the application's interface, code, and original icon. Roblox, Duo, and Moonlight are independent third-party components with their own authorship and licenses.
+
+## Language coverage
+
+The main and monitor windows, click and position controls, notification settings, messages sent by this application, errors, dialog buttons, First Setup, installer, folder picker, and uninstaller support Chinese and English. Recovery commands include both languages and provide English and Chinese filenames. The offline guides contain matching detailed installation, notification, recovery, and troubleshooting steps.
+
+Third-party Windows prompts, games, Duo, Moonlight, Telegram, and Healthchecks pages and automatic messages use their own language settings. Technical identifiers, user input, and original system diagnostics retain their original text.
