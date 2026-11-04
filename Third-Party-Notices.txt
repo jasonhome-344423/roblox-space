@@ -18,7 +18,8 @@ Exact module source archives / 对应模块源码:
 https://codeload.github.com/qt/qtbase/tar.gz/refs/tags/v6.12.0
 https://codeload.github.com/qt/qtdeclarative/tar.gz/refs/tags/v6.12.0
 https://codeload.github.com/qt/qtsvg/tar.gz/refs/tags/v6.12.0
-Qt sources are network downloads; they are not all in the small offline recovery package. / Qt 全部源码需通过上述链接下载，未全部放入此小型离线恢复包。
+Unmodified module snapshots are also bundled at licenses/sources/qtbase-6.12.0.tar.gz, qtdeclarative-6.12.0.tar.gz, and qtsvg-6.12.0.tar.gz. / 三个模块的原始源码包也已实际随附在 licenses/sources/，无需只依赖上述链接。
+FFmpeg and libplacebo source snapshots are bundled there too, pinned to the commits in the dependency recipes below. Source archive hashes and original URLs are in licenses/materials.json; build inputs and patch locations are explained in licenses/sources/SOURCE-BUILD-NOTES.txt. / FFmpeg 与 libplacebo 的源码快照同样随附，并固定为下述构建方法中的提交；哈希与原网址见 materials.json，构建输入与补丁位置见 SOURCE-BUILD-NOTES.txt。
 
 Dependency build recipes, pinned revisions, and patches / 依赖构建方法、固定修订与补丁:
 https://github.com/moonlight-stream/moonlight-qt-deps/tree/79621271459ebb945343f58d7acd6ad24d402c38

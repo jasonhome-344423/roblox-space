@@ -52,7 +52,7 @@
 
 当前安装器**没有数字签名**。从本仓库发布页下载，并与同一发布的 SHA256SUMS.txt 核对；SmartScreen 步骤在双语说明开头。哈希核对不代替发布者签名，请勿关闭 Windows 保护。
 
-Moonlight、Qt 等运行库的许可原文、版权、固定源码地址、哈希以及 Moonlight 原始源码和构建方法随附于 runtime/Moonlight/licenses 和 NOTICE.txt。发布附件 Third-Party-Notices.zip 可不运行安装器直接查看。Qt 完整源码通过通知中的固定版本链接获取，未全部塞入小型离线恢复包。
+Moonlight、Qt 等运行库的许可原文、版权、哈希、源码及构建资料随附于 runtime/Moonlight/licenses 和 NOTICE.txt。licenses/sources/ 实际包含 Moonlight、Qt 6.12.0 的 qtbase/qtdeclarative/qtsvg、FFmpeg 和 libplacebo 源码包，以及固定依赖构建方法和补丁。SOURCE-BUILD-NOTES.txt 说明构建输入；materials.json 记录原网址与 SHA256。安装器、本机离线源码备份及公开的 Third-Party-Notices.zip 均包含这些资料，无需仅依赖上游链接长期有效。
 
 Healthchecks 使用仅包含本软件一个检查的**专用项目**及该项目自己的读写 Key。它的权限覆盖整个项目。说明中写明了转移旧检查、保留 Ping URL、配置新项目 Telegram 与 Key 的步骤；安装器不自动迁移现有云端设置。
 
