@@ -47,3 +47,13 @@ The in-application software updater has been removed, including update checks, r
 The main and monitor windows, click and position controls, notification settings, messages sent by this application, errors, dialog buttons, First Setup, installer, folder picker, and uninstaller support Chinese and English. Recovery commands include both languages and provide English and Chinese filenames. The offline guides contain matching detailed installation, notification, recovery, and troubleshooting steps.
 
 Third-party Windows prompts, games, Duo, Moonlight, Telegram, and Healthchecks pages and automatic messages use their own language settings. Technical identifiers, user input, and original system diagnostics retain their original text.
+
+## Distribution and troubleshooting details
+
+The installer is currently **unsigned**. Download it from this repository's release, compare its SHA256 against `SHA256SUMS.txt` from the same release, and read the SmartScreen instructions at the start of the bilingual guide. A matching hash does not replace publisher signing; do not disable Windows protection.
+
+Original Moonlight, Qt, and runtime license/copyright texts, pinned source locations, material checksums, and unmodified Moonlight source/build recipes are included in `runtime/Moonlight/licenses` and `NOTICE.txt`. The release also provides **Third-Party-Notices.zip** for inspection without running the installer. Complete Qt sources are linked by their fixed version in the notice; they are not all embedded in the small offline recovery package.
+
+Use a **dedicated Healthchecks project containing only this application's check** and that project's read-write API key. The key has project-wide permissions. The guide explains transferring an existing check, retaining its Ping URL, and setting up the new project's Telegram integration and key. This installer does not move existing cloud configuration automatically.
+
+There is no product version label. Tray **About** and the first log entry of each session show the build hash and UTC build time. `manifest.json` is the source backup's file inventory. ZIP entry and manifest paths use `/`. The backup keeps one complete bilingual guide at its root plus editable language templates; the Chinese HTML filename is a lightweight entry point.

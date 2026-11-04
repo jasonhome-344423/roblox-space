@@ -47,3 +47,13 @@
 发布附件 SHA256SUMS.txt 提供文件校验。完整源码备份留在本机，不公开个人设置、密码、Token、API Key、配对证书、私钥或日志。源码备份包括可重建的程序、安装和卸载源码、干净的运行组件、双语说明，以及 Install.cmd / 安装.cmd、Rebuild.cmd / 重建程序.cmd、Verify-Backup.cmd / 校验备份.cmd。
 
 内部账户 RobloxSpaceBeta、Duo 实例 RobloxBeta 是正式版兼容名称，不是另一个 Beta 程序，请保留。
+
+## 分发与排查说明
+
+当前安装器**没有数字签名**。从本仓库发布页下载，并与同一发布的 SHA256SUMS.txt 核对；SmartScreen 步骤在双语说明开头。哈希核对不代替发布者签名，请勿关闭 Windows 保护。
+
+Moonlight、Qt 等运行库的许可原文、版权、固定源码地址、哈希以及 Moonlight 原始源码和构建方法随附于 runtime/Moonlight/licenses 和 NOTICE.txt。发布附件 Third-Party-Notices.zip 可不运行安装器直接查看。Qt 完整源码通过通知中的固定版本链接获取，未全部塞入小型离线恢复包。
+
+Healthchecks 使用仅包含本软件一个检查的**专用项目**及该项目自己的读写 Key。它的权限覆盖整个项目。说明中写明了转移旧检查、保留 Ping URL、配置新项目 Telegram 与 Key 的步骤；安装器不自动迁移现有云端设置。
+
+托盘“关于”和每次启动首条日志记录构建短哈希和 UTC 构建时间，主界面不显示产品版本号。备份清单改为 manifest.json，ZIP 与清单路径使用正斜杠。备份根目录只保留一份完整双语说明，另保留可编辑语言源模板，华语 HTML 文件名是轻量入口。

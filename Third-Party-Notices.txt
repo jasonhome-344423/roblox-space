@@ -1,0 +1,53 @@
+Third-party components / 第三方组件
+
+Roblox Space starts the unmodified official Moonlight portable client as a separate process. Third-party authorship and licenses remain with their respective owners. Original legal texts are in licenses/; Chinese and English explanations here do not replace them.
+Roblox Space 以独立进程启动未修改的官方 Moonlight 便携客户端。各组件保留原作者归属与许可。许可证原文位于 licenses/；本说明的华语和英文解释不代替许可原文。
+
+Moonlight PC 6.2.0: GPL-3.0; licenses/Moonlight/LICENSE.
+Official binary archive / 官方原包: https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.2.0/MoonlightPortable-x64-6.2.0.zip
+SHA256: 6f91d268b41ed5ca8066d9d7578dc403b8db190991ff48f00b1700465f8f7ebf
+All 284 official files were compared with the retained upstream input and matched. / 已逐一核对 284 个官方文件，保留的上游输入与原包一致。
+Corresponding Moonlight source, including its project submodules / Moonlight 对应源码（含项目子模块）:
+https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.2.0/MoonlightSrc-6.2.0.tar.gz
+SHA256: 217afac54e4f8734f3d97b32cb8c8b46b677e87f25b77c945343dd06f359e189
+An unchanged copy is bundled at licenses/sources/MoonlightSrc-6.2.0.tar.gz. / 原始源码包已随附在该路径。
+
+Qt 6.12.0: open-source GPL/LGPL options vary by module; individual third-party components have their own notices. Used Qt modules include qtbase, qtdeclarative, qtsvg. Original license families, bundled third-party licenses, and qt_attribution.json files are preserved under licenses/Qt/.
+Qt 6.12.0：模块的 GPL/LGPL 开源许可选项不同，内含第三方组件另有声明。使用的 Qt 模块包括 qtbase、qtdeclarative、qtsvg。许可原文、内含第三方许可与 qt_attribution.json 均保留在 licenses/Qt/。
+Exact module source archives / 对应模块源码:
+https://codeload.github.com/qt/qtbase/tar.gz/refs/tags/v6.12.0
+https://codeload.github.com/qt/qtdeclarative/tar.gz/refs/tags/v6.12.0
+https://codeload.github.com/qt/qtsvg/tar.gz/refs/tags/v6.12.0
+Qt sources are network downloads; they are not all in the small offline recovery package. / Qt 全部源码需通过上述链接下载，未全部放入此小型离线恢复包。
+
+Dependency build recipes, pinned revisions, and patches / 依赖构建方法、固定修订与补丁:
+https://github.com/moonlight-stream/moonlight-qt-deps/tree/79621271459ebb945343f58d7acd6ad24d402c38
+The original recipe archive is bundled at licenses/sources/moonlight-qt-deps-v19.tar.gz. It records the dependencies and Windows build flags, including the libplacebo patch and Vulkan SDK 1.4.363.0 input. GitHub source archives do not expand git submodules; follow .gitmodules and the pinned gitlinks when rebuilding these upstream components.
+原始构建方法压缩包已随附在上述路径，记录各依赖、Windows 编译参数、libplacebo 补丁和 Vulkan SDK 1.4.363.0。GitHub 自动源码压缩包不会展开 git 子模块；重建上游组件时须按 .gitmodules 和固定 gitlink 取得依赖。
+
+Component / 组件 | Original notice / 原始说明 | Source / 源码
+FFmpeg | licenses/FFmpeg/ | https://github.com/FFmpeg/FFmpeg/tree/946fcce07b6dcd0331c8cc609192aeff5e1924f8
+SDL3 | licenses/SDL3/ | https://github.com/libsdl-org/SDL/tree/829a65d769d935c4852f8159e964312c0957260a
+SDL2-compat | licenses/SDL2-compat/ | https://github.com/libsdl-org/sdl2-compat/tree/e4df8a55f20da762290a78c2bbe8f8d89d01486a
+SDL2_ttf | licenses/SDL2_ttf/ | https://github.com/libsdl-org/SDL_ttf/tree/a883e490e30fb44a5336ea3dcb990c6982c5216f
+FreeType (SDL) | licenses/FreeType-SDL/ | https://github.com/libsdl-org/freetype/tree/535d2993d2cab67cc8b270132b1b1bcb62f269aa
+HarfBuzz (SDL) | licenses/HarfBuzz-SDL/ | https://github.com/libsdl-org/harfbuzz/tree/950d232cdcd29e2e83a2099307e5624a8f1aa937
+OpenSSL | licenses/OpenSSL/ | https://github.com/openssl/openssl/tree/c8bd5a57108599ac650bbae77fcabe3109dab2e8
+Opus | licenses/Opus/ | https://github.com/xiph/opus/tree/22244de5a79bd1d6d623c32e72bf1954b56235be
+Discord-RPC | licenses/Discord-RPC/ | https://github.com/cgutman/discord-rpc/tree/7bcf3b3fdd02d4d5072971ef1d5b4e6dd3a765dc
+Detours (AntiHooking) | licenses/Detours/ | https://github.com/microsoft/Detours/tree/9764cebcb1a75940e68fa83d6730ffaf0f669401
+libplacebo | licenses/libplacebo/ | https://code.videolan.org/videolan/libplacebo/-/tree/92b5ac6db79f4d680eb656692f7bf51e9606f42a
+libplacebo source mirror / 源码镜像: https://github.com/haasn/libplacebo/tree/92b5ac6db79f4d680eb656692f7bf51e9606f42a
+ dav1d | licenses/dav1d/ | https://code.videolan.org/videolan/dav1d/-/tree/54706fc6bc0cdecab7e9593974a4039cc038fca7
+Vulkan-Headers | licenses/Vulkan-Headers/ | https://github.com/KhronosGroup/Vulkan-Headers/tree/6802bb4733b63ed5efd3adb308a6c885ef180ea1
+Vulkan SDK static compiler components / SDK 内静态编译器组件: licenses/shaderc/, glslang/, SPIRV-Tools/, SPIRV-Headers/. Use the Vulkan SDK 1.4.363.0 sources/build records from https://vulkan.lunarg.com/ and the pinned dependency recipes above for the actual SDK build. shaderc v2026.3 is the preserved upstream license reference, not a claimed independently verified SDK source commit.
+实际 SDK 构建的来源见上述 Vulkan SDK 和固定构建方法；shaderc v2026.3 是保存的上游许可文本参考，不声称已独立确认它就是 SDK 内部的源码提交。
+Microsoft Visual C++ V14 runtime | licenses/Microsoft/Visual-C-V14-License-Redistributable-and-Runtime-ENU.docx | https://visualstudio.microsoft.com/license-terms/vs2026-ga-visualcpp-v14-redist-runtime/
+Microsoft runtimes are proprietary redistributables, not GPL/LGPL code. / Microsoft 运行库为专有可再分发组件，不是 GPL/LGPL 源码。
+ModeSeven font: embedded original copyright/distribution statement is preserved in licenses/Moonlight/ModeSeven-font-NOTICE.txt. / 字体内嵌的原始版权和可分发声明保存在该文件。
+
+The complete material inventory, original download/source URLs, and SHA256 hashes are in licenses/materials.json. Runtime DLLs remain separate; Roblox Space does not prohibit replacement or debugging of compatible modified third-party components where their licenses permit it. Installer file checks verify installation integrity and do not lock the runtime DLLs against user replacement.
+材料清单、原始下载/源码网址与 SHA256 均在 licenses/materials.json。DLL 保持独立；在相关许可允许的范围内，本程序不禁止替换、调试兼容的修改版第三方组件。安装时的文件校验用于核对完整性，不会在运行时锁定 DLL 禁止用户替换。
+
+Duo is installed separately; its installer is not redistributed in this package. / Duo 另行安装，本包不分发其安装器。
+https://github.com/DuoStream/Duo/releases/tag/v1.6.0
