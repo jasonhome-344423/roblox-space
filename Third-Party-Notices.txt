@@ -1,4 +1,4 @@
-Third-party components / 第三方组件
+﻿Third-party components / 第三方组件
 
 Roblox Space starts the unmodified official Moonlight portable client as a separate process. Third-party authorship and licenses remain with their respective owners. Original legal texts are in licenses/; Chinese and English explanations here do not replace them.
 Roblox Space 以独立进程启动未修改的官方 Moonlight 便携客户端。各组件保留原作者归属与许可。许可证原文位于 licenses/；本说明的华语和英文解释不代替许可原文。

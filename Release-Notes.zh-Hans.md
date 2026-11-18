@@ -1,8 +1,10 @@
-# Roblox Space
+﻿# Roblox Space
 
 [下载安装程序](https://github.com/jasonhome-344423/roblox-space/releases/latest/download/RobloxSpace-Setup.exe) · [双语安装说明](https://github.com/jasonhome-344423/roblox-space/releases/latest/download/Installation-Guide.html) · [English release notes](https://github.com/jasonhome-344423/roblox-space/blob/main/Release-Notes.md)
 
 本次补齐华语与英文：主程序和监测窗口、通知设置与手机消息、错误提示和弹窗按钮、首次配置、独立 EXE 安装与卸载、目录选择、完整离线说明和源码备份恢复入口。修正英文按钮裁字，并为备份增加英文文件名入口。
+
+安装器的语言按钮在两种语言下都可见。安装失败后重试时，按当前勾选状态创建快捷方式。安装成功后若无法打开「首次配置」，安装器会单独提示。源码备份恢复会先核对已生成安装器的构建标识和 SHA256，发现损坏或构建不完整时重新生成。
 
 主窗口选择语言后立即切换并记住设置。第三方程序、游戏、系统权限窗口和云端自动消息由各自语言设置决定；个人输入和原始系统诊断保留原文。
 

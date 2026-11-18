@@ -1,10 +1,16 @@
-# Roblox Space
+﻿# Roblox Space
 
 English | [Chinese / 华语](Release-Notes.zh-Hans.md)
 
 **[Download the Windows installer](https://github.com/jasonhome-344423/roblox-space/releases/latest/download/RobloxSpace-Setup.exe)**
 
 [Download the installation guide — Chinese / English](https://github.com/jasonhome-344423/roblox-space/releases/latest/download/Installation-Guide.html)
+
+## Installer and backup fixes
+
+- The language selector stays visible in both languages. Retrying installation uses the current shortcut selection.
+- If First Setup cannot open after installation, the installer reports that separately and keeps the successful installation result.
+- Source-backup recovery checks the build and SHA256 of a previously generated installer before reusing it. It rebuilds an invalid or incomplete result.
 
 ## Included
 
