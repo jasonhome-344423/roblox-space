@@ -10,7 +10,7 @@ English | [Chinese / 华语](Release-Notes.zh-Hans.md)
 
 - The language selector stays visible in both languages. Retrying installation uses the current shortcut selection.
 - If First Setup cannot open after installation, the installer reports that separately and keeps the successful installation result.
-- Source-backup recovery checks the build and SHA256 of a previously generated installer before reusing it. It rebuilds an invalid or incomplete result.
+- Source-backup recovery checks the build and SHA256 of a previously generated installer before reusing it. Rebuilds use the Windows temporary directory to avoid adding long paths under the extracted backup.
 
 ## Included
 
