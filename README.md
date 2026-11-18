@@ -19,7 +19,7 @@ A Windows application that brings a configured Roblox workspace, click controls,
 ## Install and start
 
 1. Keep the computer connected to external power.
-2. For an upgrade, close Roblox Space with X and wait for its game, monitor, and viewer to exit.
+2. For an upgrade, close Roblox Space with X and wait for its game, monitor, Moonlight viewer, and Duo to exit.
 3. Run `RobloxSpace-Setup.exe`. Keep the existing installation directory when upgrading.
 4. On a new Windows installation, follow the guide's Windows, Duo, account, pairing, and Roblox setup steps in order.
 5. Open the desktop **Roblox Space** shortcut and approve the Windows permission prompt.
@@ -31,12 +31,16 @@ The default install directory is `%LOCALAPPDATA%\Programs\RobloxSpace`. Upgrades
 
 - The desktop shortcut starts the required workspace components together.
 - **Minimize** keeps the game, monitoring, and clicking running.
-- **X** closes the game, clicking, monitor, Moonlight viewer, and application. It retains the Duo workspace for faster reopening.
-- To also stop Duo, right-click the application tray icon while Roblox Space is open and choose **Exit everything (including Duo)**.
+- **X** closes Roblox Space, the workspace game, click controls, monitor, Moonlight, and Duo. The window hides promptly while shutdown is verified.
+- The tray offers **Exit and keep Duo running** for faster reopening. If the application reports an unconfirmed shutdown, press **X** again to retry.
 - Switching to battery while the application is running performs a complete shutdown. Returning to external power does not reopen it.
 - Once the application has exited, it no longer monitors power changes or sends cloud heartbeats. Normal exit attempts to pause the cloud check.
 
 The first launch after a Windows restart or complete Duo shutdown needs to create the workspace again. Reusing a retained workspace is usually faster; startup time varies with the computer and system state.
+
+## Architecture
+
+The native C++ host manages the window and owns its Moonlight viewer. The elevated workspace manager starts or stops the configured Duo service and verifies the account and session before controlling their processes. A separate worker handles input, reconnects, and game monitoring on the dedicated desktop. A shared lifecycle library coordinates startup, readiness, and shutdown.
 
 ## Controls and languages
 
