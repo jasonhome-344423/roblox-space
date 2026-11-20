@@ -1,8 +1,9 @@
-# Roblox Space
+## Roblox Space 1.0.3
 
-This release ships the C17 Windows application, workspace manager, monitor, and installer. The graphite interface centers the game view and groups the controls beneath it. English and Simplified Chinese are available in the app and installer.
+Windows x64 · Build `1c56c6482616`
 
-Download **RobloxSpace-Setup.exe** and compare its SHA-256 hash with **SHA256SUMS.txt**. **Installation-Guide.html** covers first setup and installation over an existing copy. **Third-Party-Notices.zip** contains license and corresponding source materials for the bundled components.
+- After a confirmed game disconnect, Roblox Space waits for connectivity and keeps trying to rejoin without an attempt limit. The delay after a failed attempt grows to three minutes. A launched client can take up to 90 additional seconds to time out. Leaving deliberately or receiving a blocked connection ends recovery.
+- Healthchecks heartbeats run independently of the game while Roblox Space is open. Cloud status now distinguishes a missing heartbeat URL, a rejected request, and a temporary delivery failure.
+- The bilingual guide uses the current setup controls and explains how to verify and restore an offline backup. A new game process still requires you to confirm a new click position.
 
-The installer is unsigned. See the installation guide for the download verification steps and Windows SmartScreen information.
-
+Download **RobloxSpace-Setup.exe** and compare its SHA-256 with **SHA256SUMS.txt**. The installer is unsigned. For an upgrade, close Roblox Space and select the existing installation folder. For a first installation, follow **Installation-Guide.html**. **Third-Party-Notices.zip** contains the bundled licenses and corresponding third-party sources.
